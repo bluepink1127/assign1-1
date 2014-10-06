@@ -9,7 +9,6 @@ int h = 50;
 
 // declare variables
 // --------------------------------------------
-// put your code inside here
 int totalScore = 500;
 
 // --------------------------------------------
@@ -73,20 +72,18 @@ void draw() {
          machine.setSlotFruit(2,C);
     
         
-        int m = machine.getFruitCount(0); 
-        int n = machine.getFruitCount(1); 
-        int o = machine.getFruitCount(2);
-        int p = machine.getFruitCount(3); 
-        int q = machine.getFruitCount(4); 
-        int r = machine.getFruitCount(5);
+        int M = machine.getFruitCount(0); 
+        int N = machine.getFruitCount(1); 
+        int O = machine.getFruitCount(2);
+        int P = machine.getFruitCount(3); 
+        int Q = machine.getFruitCount(4); 
+        int R = machine.getFruitCount(5);
         
-         totalScore= totalScore+(m*m*60+n*n*10+o*o*20+p*p*30+q*q*40+r*r*50);
+         totalScore= totalScore+(M*M*60+N*N*10+O*O*20+P*P*30+Q*Q*40+R*R*50);
         
-        
-       int result = machine.probability(0.1);
-       
-       
-
+        int result = machine.probability(0.1);
+            
+    
          println(result);
  
       
@@ -106,8 +103,6 @@ void mousePressed() {
     button = !button;
   }  
 }
-
-
 
 
 
