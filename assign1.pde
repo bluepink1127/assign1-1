@@ -82,9 +82,14 @@ void draw() {
          totalScore= totalScore+(M*M*60+N*N*10+O*O*20+P*P*30+Q*Q*40+R*R*50);
         
         int result = machine.probability(0.1);
-            
+        
+        if(result==1){
+        machine.setSlotFruit(0,0);
+        machine.setSlotFruit(1,0);
+        machine.setSlotFruit(2,0);
+        }
     
-         println(result);
+        
  
       
       // -------------------------------------------------
